@@ -1,0 +1,14 @@
+#map {
+    height: 27%;
+    width: 95%;
+    position: absolute;
+
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}

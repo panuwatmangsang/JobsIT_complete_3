@@ -1,0 +1,398 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'Mobtserrat', sans-serif;
+
+}
+/*======================== layout ========================*/
+.mapTable {
+    position  : relative;
+    top       :80px;
+    width     : 25%;
+    height    : 700px;
+    float     : left;
+    padding   : 15px;
+    background-color:#f6ecf0;
+
+}
+.showMap {
+    width  : 75%;
+    height : 650px;
+    float  : left;
+    padding: 15px;
+    
+}
+/* #map{
+    position:absolute;
+    height  : 708px;
+    width   : 1154px;
+    top     : 80px;
+    box-shadow:0px 20px 20px 0px rgb(231, 194, 192);
+} */
+/*======================== map table ========================*/
+.map .mapTitle {
+    position: relative;
+    left: 2px;
+    font-size : 25px;
+    text-align: center;
+    margin-top: 30px;
+    background: #E94242;
+    color     : white;
+    border-radius: 10px 10px 0px 0px;
+    width: 355px;
+    cursor:context-menu; 
+}
+
+.map  .mapDetails {
+    margin: 1px;
+    border-bottom  : 2px solid rgb(218, 218, 218);
+    font-size : 20px;
+    text-align: center;
+    width: 354px;
+    height: 30px;
+    background: #ffff;
+}
+.map  .myDIV button .btn .fa{
+    position: absolute;
+    left: -90px;
+    top: 110px;
+    cursor:pointer;
+}
+.map  .mapDetails .faTwo a button .fa{
+    position: relative;
+    left: -10px;
+    top: 2px;
+    cursor:pointer;
+}
+.map .mapDetails:hover a button .fa{
+    position: absolute;
+    left: 99px;
+    top: 4px;
+    cursor:pointer;
+}
+.map .mapDetails:hover a button .faTwo .fa{
+    position: relative;
+    left: 103px;
+    top: 36px;
+    cursor:pointer;
+}
+
+.map .mapDetails a {
+    text-decoration: none;
+    color          : #000;
+    cursor         :pointer;
+  
+}
+.map .myDIV button  {
+    position: relative;
+    border-radius: 10px;
+    font-size:18px;
+    width: 350px;
+    height: 1px; 
+    cursor:pointer;
+    top: 20px;
+}
+.map .mapDetails .faTwo  p{
+    position: relative;
+    border-radius: 10px;
+    font-size:18px;
+    width: 350px;
+    height: 1px; 
+    top:-19px;
+    cursor:pointer;
+   
+}
+.map .mapDetails:hover button p{
+    position: relative;
+    left: 4px;
+    color     : white;
+    cursor:pointer;
+    top:-10px;
+} 
+/*======================== ระยะทาง ========================*/
+.distance{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    top: 25px;
+    left: 1px;
+    border-radius: 10px;
+    box-shadow:0px 0px 6px rgb(231, 194, 192);
+}
+.distance label{
+    position         : relative;
+    top              : 15px;
+    right            : -10px;
+    color            : black;
+    font-size        : 18px;
+
+}
+.distance p{
+    position         : relative;
+    font-size        : 18px;
+    left             : 80px;
+    top              : -8px;
+    background-color : rgb(255, 255, 255);
+    text-align       :center;
+    border           :1px solid black;
+    width            : 50px;
+    height           : 25px;
+    border-radius: 10px;
+}
+.distance2 p{
+    position         : relative;
+    font-size        : 18px;
+    left             : 130px;
+    top              : -80px;
+    text-align       :center;
+    width            : 50px;
+    height           : 15px;
+}
+.distance .slider {
+    position: relative;
+    -webkit-appearance: none;
+    width: 97%;
+    height: 6px;
+    left: 6px;
+    border-radius: 5px;
+    top: -1px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.distance .slider::after {
+    content:'1000';
+    color: black;
+    font-size: 18px;
+    position:absolute;
+    left: 88%;
+    top:15px;
+
+}
+.distance .slider::before {
+    content:'100';
+    color: black;
+    font-size: 18px;
+    position:absolute;
+    left: 1%;
+    top:15px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #E94242;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+.mapDetails .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+.active, .mapDetails .btn:hover {
+    /* background-color: #666; */
+    color: white;
+}
+/*===========================WFH========================================= */
+.WFH label{
+    position: relative;
+    font-size: 15px;
+    left: 25px;
+    top: 5px;
+}
+.WFH input{
+    position: absolute;
+    left: 20px;
+    top: 230px;
+    cursor: pointer;
+}
+/* ============================== search ============================= */
+.search-icon2 {
+    position     : absolute;
+    height       : 30px;
+    width        : 348px;
+    display      : flex;
+    background   : #f2f2f2;
+    border-radius: 5px;
+    top          : 10px;
+    left         : 20px;
+    box-shadow   :0px 0px 8px rgb(231, 194, 192);
+    border       :1px solid rgba(159, 154, 154, 0.381);
+
+}
+.search-icon2 input {
+    position: relative;
+    height       : 100%;
+    width        : 300px;
+    border       : none;
+    outline      : none;
+    padding      : 0 10px;
+    color        : #000;
+    font-size    : 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-icon2 .icon2 {
+    position: relative;
+    left: 1px;
+    height       : 100%;
+    width        : 49px;
+    line-height  : 40px;
+    text-align   : center;
+    border       : 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor       : pointer;
+}
+
+.search-icon2 .icon2:hover {
+    position: relative;
+    left: 2px;
+    background: #6e6e6e;
+}
+
+.search-icon2 .icon span {
+    color    : #222222;
+    font-size: 28px;
+}
+.search-icon2 .icon2 .fa-search{
+    position: relative;
+    top: -11px;
+    font-size:20px;
+}
+/* =====================================DetailJobs============================================= */
+.overlay {
+    height          : 300px;
+    width           : 0px;
+    position        : relative;
+    z-index         : 1;
+    top             : 30px;
+    left            : 0;
+    background-color:#ffff;
+    overflow        : hidden;
+    transition      : 0.3s;
+    border-radius   : 10px;
+    box-shadow      : 0px 0px 6px rgb(231 194 192);
+}
+.overlay-content{
+    position        : absolute;
+    top             : 10%;
+    width           : 399px;
+    text-align      : left;
+}
+.overlay-content input{
+    position: relative;
+    border: none;
+    border-bottom: 2px solid #fff;
+    cursor: context-menu;
+    font-size: 16px;
+    left: 2%;
+    outline: none;
+    width: 85%;
+}
+.overlay-content textarea{
+    position: relative;
+    border: none;
+    border-bottom: 2px solid #fff;
+    cursor: context-menu;
+    font-size: 16px;
+    left: 2%;
+    outline: none;
+    width: 85%;
+    resize: none;
+}
+.overlay-content .p-text input{
+    position: relative;
+    left: 32%;
+    top: -30px;
+}
+.overlay-content .p-text p{
+    position: relative;
+    left: 10px;
+    top:18px;
+}
+.overlay-content .p2-text p{
+    position: relative;
+    top: 10px;
+}
+.overlay-content p {
+    position        : relative;
+    top             : 8px;
+    width           : 100%;
+    text-align      : left;
+    left            : 20px;
+    margin-top      : 10px;
+
+}
+
+.overlay a {
+    position        : relative;
+    padding         : 8px;
+    text-decoration : none;
+    font-size       : 36px;
+    color           : #818181;
+    display         : block;
+    top             :-25px;
+  
+}
+.overlay a:hover {
+    color           : #E94242;
+}
+/* =====================================DetailJobs============================================= */
+.remove{
+    position: relative;
+    top: -450px;
+    left: 255px;
+}
+.remove input{
+    background-color: #ffff;
+   
+    height: 25px;
+    width: 100px;
+    cursor:pointer;
+    border:0px solid #f6ecf0;
+    border-radius: 5px;
+    box-shadow:0px 0px 6px rgb(231, 194, 192);
+}
+.remove input:hover{
+    background-color:#6369ED ;
+    color:#ffff ;
+}
+
+/* =================================================================== */
+.btn {
+    position:relative;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #ffff ;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+    width: 354px;
+    height: 38px;
+    left: -4px;
+
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.btn:hover {
+    /* background-color: #6369ED; */
+    color: white;
+}
